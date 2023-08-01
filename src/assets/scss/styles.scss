@@ -1,0 +1,128 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+
+// .card {
+// 	&:after {
+// 		content: "";
+// 		width: 126px;
+// 		height: 90px;
+// 		position: absolute;
+// 		background: #c0c0c0c4;
+// 		z-index: -1;
+// 		filter: blur(63px);
+// 		bottom: 0;
+// 		right: 0;
+// 		left: auto;
+// 		transition: right 300ms, left 300ms;
+// 	}
+
+// 	&:before {
+// 		content: "";
+// 		width: 111px;
+// 		height: 76px;
+// 		position: absolute;
+// 		background: #ff00006e;
+// 		z-index: -1;
+// 		filter: blur(63px);
+// 		right: auto;
+// 		left: 0;
+// 		transition: right 300ms, left 300ms;
+// 	}
+
+// 	&:hover {
+// 		&:after {
+// 			right: 0;
+// 			left: auto;
+// 		}
+
+// 		&:before {
+// 			right: auto;
+// 			left: 0;
+// 		}
+// 	}
+// }
+
+
+.card::after {
+	content: "";
+	width: 126px;
+	height: 90px;
+	position: absolute;
+	background: #c0c0c0c4;
+	z-index: -1;
+	filter: blur(63px);
+	bottom: 0;
+	right: 0;
+	left: auto;
+	transition: right 900ms, left 900ms;
+}
+
+.card::before {
+	content: "";
+	width: 111px;
+	height: 76px;
+	position: absolute;
+	background: #ff00006e;
+	z-index: -1;
+	filter: blur(63px);
+	transition: right 900ms, left 900ms;
+}
+
+.card:hover::after {
+	right: auto;
+	left: 0;
+}
+
+.card:hover::before {
+	right: 0;
+	left: auto;
+}
+
+// .card:hover::after {
+// 	right: auto;
+// 	left: 0;
+// 	animation: slideLeft 900ms forwards;
+// 	/* Use an animation for smooth transition */
+// }
+
+// .card:hover::before {
+// 	right: 0;
+// 	left: auto;
+// 	animation: slideRight 900ms forwards;
+// 	/* Use an animation for smooth transition */
+// }
+
+@keyframes slideLeft {
+	from {
+		right: 0;
+	}
+
+	to {
+		right: auto;
+		left: 0;
+	}
+}
+
+@keyframes slideRight {
+	from {
+		left: 0;
+	}
+
+	to {
+		right: 0;
+		left: auto;
+	}
+}
+
+.price-slider {
+	margin-bottom: 1rem;
+}
