@@ -5,6 +5,8 @@ import { GlobalConfig, ToastrService } from 'ngx-toastr';
 
 import { CustomToastrComponent } from 'app/main/extensions/toastr/custom-toastr/custom-toastr.component';
 
+
+
 @Component({
   selector: 'app-feather',
   templateUrl: './feather.component.html',

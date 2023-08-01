@@ -27,10 +27,10 @@ import { LayoutModule } from 'app/layout/layout.module';
 import { ContentHeaderModule } from 'app/layout/components/content-header/content-header.module';
 
 import { ContextMenuComponent } from 'app/main/extensions/context-menu/context-menu.component';
-import { AnimatedCustomContextMenuComponent } from './main/extensions/context-menu/custom-context-menu/animated-custom-context-menu/animated-custom-context-menu.component';
-import { BasicCustomContextMenuComponent } from './main/extensions/context-menu/custom-context-menu/basic-custom-context-menu/basic-custom-context-menu.component';
 import { SubMenuCustomContextMenuComponent } from './main/extensions/context-menu/custom-context-menu/sub-menu-custom-context-menu/sub-menu-custom-context-menu.component';
 import { FakeDbService } from '../@fake-db/fake-db.service';
+import { AnimatedCustomContextMenuComponent } from './main/extensions/context-menu/custom-context-menu/animated-custom-context-menu/animated-custom-context-menu.component';
+import { BasicCustomContextMenuComponent } from './main/extensions/context-menu/custom-context-menu/basic-custom-context-menu/basic-custom-context-menu.component';
 
 const appRoutes: Routes = [
   {
@@ -92,8 +92,8 @@ const appRoutes: Routes = [
     AppComponent,
     ContextMenuComponent,
     BasicCustomContextMenuComponent,
-    AnimatedCustomContextMenuComponent,
-    SubMenuCustomContextMenuComponent
+    // AnimatedCustomContextMenuComponent,
+    // SubMenuCustomContextMenuComponent
   ],
   imports: [
     BrowserModule,
